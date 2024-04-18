@@ -17,5 +17,3 @@ Also [check out the results](https://apartresearch.com/sprints#research) from 
     -   [A paper presenting a framework for AI and Democracy](https://journals.sagepub.com/doi/pdf/10.1177/20563051231186353)
     -   [Article by Yoshua Bengio in the Journal of Democracy](https://www.journalofdemocracy.org/ai-and-catastrophic-risk/)
     -   [Podcast about the risks of AI for democracy](https://www.everand.com/listen/podcast/653587405)
-
-You can also see more on [the resources page](https://alignmentjam.com/hackathon/interpretability).
