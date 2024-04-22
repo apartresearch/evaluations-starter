@@ -25,3 +25,4 @@ Here is some interesting material to get inspiration for the hackathon:
 - [Why it Matters podcast on The Year of AI and Elections](https://podcasts.apple.com/gb/podcast/the-year-of-ai-and-elections/id1482132871?i=1000639276052)
 - [Guardian article about the influence of AI on the US elections](https://www.theguardian.com/us-news/2024/feb/26/ai-deepfakes-disinformation-election)
 - [80000 hours podcast with Nina Schick on disinformation and the rise of synthetic media](https://80000hours.org/podcast/episodes/nina-schick-disinformation-synthetic-media/)
+- [Rest of World tracks key global incidents of AI-generated election content](https://restofworld.org/2024/elections-ai-tracker/)
