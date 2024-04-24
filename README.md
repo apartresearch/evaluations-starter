@@ -1,4 +1,4 @@
-# Get started with model evaluation research
+# AI Model Evaluations Quickstart Guide
 
 Model evaluation is a technical field of AI safety and ML research focused on benchmarking and evaluating models. Sub-fields include Benchmarking, Dangerous Capability Evaluations, and Demonstrations. Related research topics include the governance of AI, alignment research, and scenario planning for AI.
 
