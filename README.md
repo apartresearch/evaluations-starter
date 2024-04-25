@@ -45,4 +45,7 @@ Google DeepMind ([2024](https://arxiv.org/pdf/2311.02462.pdf)) defines levels of
 
 The weapons of mass destruction proxy (WMDP) benchmark ([Li et al., 2024](https://arxiv.org/pdf/2403.03218.pdf)) measures cyber risk according to accuracy on questions that proxy the potential for misuse assistance along four stages of a cyberattack: 1) Reconnaissance, 2) weaponization, 3) exploitation, and 4) post-exploitation.
 
+## Science of Evaluations
+Apollo Research argues that if AI model evaluations (evals) want to have meaningful real-world impact, we need a [“Science of Evals"](https://www.apolloresearch.ai/blog/we-need-a-science-of-evals)
+
 From academia, Giudici et al. ([2024](https://www.sciencedirect.com/science/article/pii/S0957417423017220)) define a risk management framework for errors introduced by AI. Outside labs, Kokotajlo ([2022](https://www.lesswrong.com/posts/n3w3ww9Xuf8SngBfE/replacement-for-ponr-concept)) describes overpowering as an important metric. OpenAI's head of superalignment, Leike, describes ([2023](https://aligned.substack.com/p/self-exfiltration)) self-exfiltration as an important capability to mitigate due to the control implications.
