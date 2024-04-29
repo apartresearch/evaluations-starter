@@ -4,7 +4,7 @@ Model evaluation is a technical field of AI safety and ML research focused on be
 
 This is a short overview of introductory material available in the field of model evaluations and will work as a guide for you to engage with the field.
 
-_This is a work in progress and we invite interested parties to submit pull requests for new materials_
+*This is a work in progress and we invite interested parties to submit pull requests for new materials*
 
 ## Demonstrations research
 
@@ -20,12 +20,44 @@ These are ideas to get you started and you can [check out the results](https://
 
 Here is some interesting material to get inspiration for the hackathon:
 
+- [CivAI Demonstrations for Policy Makers](https://vimeo.com/935221775/79e7fbb14f)
 - [A paper presenting a framework for AI and Democracy](https://journals.sagepub.com/doi/pdf/10.1177/20563051231186353)
 - [Article by Yoshua Bengio in the Journal of Democracy](https://www.journalofdemocracy.org/ai-and-catastrophic-risk/)
 - [Why it Matters podcast on The Year of AI and Elections](https://podcasts.apple.com/gb/podcast/the-year-of-ai-and-elections/id1482132871?i=1000639276052)
 - [Guardian article about the influence of AI on the US elections](https://www.theguardian.com/us-news/2024/feb/26/ai-deepfakes-disinformation-election)
 - [80000 hours podcast with Nina Schick on disinformation and the rise of synthetic media](https://80000hours.org/podcast/episodes/nina-schick-disinformation-synthetic-media/)
 - [Rest of World tracks key global incidents of AI-generated election content](https://restofworld.org/2024/elections-ai-tracker/)
+
+### Some starter code and Colabs for the hackathon
+
+**Loading GPT models in Google Colab**
+
+See [this Colab notebook](https://colab.research.google.com/drive/14R13JqKsBgRqfIDgvp0ep9T6YG2BFY_V) to use the EasyTransformer model downloader utility to easily load language models in Colab. It also has all the available models there from EleutherAI, OpenAI, Facebook AI Research, Neel Nanda and more.
+
+You can also use the huggingface Transformers library directly [like this](https://huggingface.co/docs/transformers/quicktour#:~:text=%3E%3E%3E%20model%20%3D%20AutoModelForSequenceClassification.-,from_pretrained,-(model_name)%0A%3E%3E%3E).
+
+**Extrapolating a trend into the future**
+
+Simple [notebook](https://colab.research.google.com/drive/1durgWnT_Xz5d0Z2afolSwIOd-aDsbFgx?usp=sharing) that uses a polynomial regression to make a plot of an extrapolation of some data into the future.
+
+**Notebooks by Hugging Face**
+
+These notebooks all pertain to the usage of transformers and shows how to use their library. [See them all here](https://huggingface.co/docs/transformers/notebooks). Some notable notebooks include:
+
+- [Fine-tuning a pretrained model](https://colab.research.google.com/github/huggingface/notebooks/blob/main/transformers_doc/en/training.ipynb)
+- [How to benchmark models](https://github.com/huggingface/notebooks/blob/main/examples/benchmark.ipynb)
+
+**Finetuning language model with OpenAI or Replicate**
+
+This notebook provides an overview of how you can finetune LLMs, such as Replicate usage and more. [Go to the notebook here](https://colab.research.google.com/drive/1CUfHP3j1B_gP-45qvRG6VmF7koer59X-?usp=sharing#scrollTo=DGoPq4ziiU86).
+
+**Language Model Evaluation Harness**
+
+The LMEH is a set of [over 200 tasks](https://github.com/EleutherAI/lm-evaluation-harness/blob/master/docs/task_table.md) that you can automatically run your models through. You can easily use it by writing *pip install lm-eval* at the top of your script.
+
+See a Colab notebook shortly introducing how to use it [here](https://colab.research.google.com/drive/1zmZfdETnQ-AR2BBIK3pFtnP5937J1yaz?usp=sharing).
+
+Check out [the Github repository](https://github.com/EleutherAI/lm-evaluation-harness) and the [guide to adding a new benchmark](https://github.com/EleutherAI/lm-evaluation-harness/blob/master/docs/task_guide.md) so you can test your own tasks using their easy interface.
 
 ## Cyber capabilities evaluation
 
@@ -48,5 +80,14 @@ The weapons of mass destruction proxy (WMDP) benchmark ([Li et al., 2024](https:
 From academia, Giudici et al. ([2024](https://www.sciencedirect.com/science/article/pii/S0957417423017220)) define a risk management framework for errors introduced by AI. Outside labs, Kokotajlo ([2022](https://www.lesswrong.com/posts/n3w3ww9Xuf8SngBfE/replacement-for-ponr-concept)) describes overpowering as an important metric. OpenAI's head of superalignment, Leike, describes ([2023](https://aligned.substack.com/p/self-exfiltration)) self-exfiltration as an important capability to mitigate due to the control implications.
 
 ## Science of Evaluations
-Apollo Research argues that if AI model evaluations want to have meaningful real-world impact, we need a “Science of Evals" ([Apollo Research, 2024](https://www.apolloresearch.ai/blog/we-need-a-science-of-evals)) 
 
+Apollo Research argues that if AI model evaluations want to have meaningful real-world impact, we need a “Science of Evals" ([Apollo Research, 2024](https://www.apolloresearch.ai/blog/we-need-a-science-of-evals)). They provide a small overview of current work in the direction of science of evals:
+
+1. Many different papers such as [Liang et al., 2022](https://arxiv.org/abs/2211.09110); [Mizrahi et al., 2023](https://arxiv.org/abs/2401.00595); [Scalar et al., 2023](https://arxiv.org/abs/2310.11324) find that different phrasings of the same question can lead to very different results thus suggesting to always evaluate LMs on a set of diverse prompts.
+2. Multiple papers investigate how different ways of structuring an evaluation, e.g. as multiple choice or generative evaluation, can lead to substantially different results, e.g. [Robinson et al., 2022](https://arxiv.org/abs/2210.12353); [Wang et al., 2023](https://arxiv.org/abs/2311.05915); [Savelka et al., 2023](https://arxiv.org/abs/2303.08033), [Khatun et al, 2024](https://arxiv.org/abs/2401.07955#:~:text=We%20analyze%2026%20small%20open,MCQ%20tests%20with%20these%20models). Since model evaluations often try to make statements about the maximal capability of a model, it’s important to be aware of how a question is structured (e.g. discriminative vs. generative evaluation) and worded.
+3. Several papers investigated the relationship between fine-tuning and prompting which has important implications for capability elicitation, e.g. [C. Wang et al., 2022](https://arxiv.org/pdf/2207.11680.pdf); [Liu et al., 2022](https://arxiv.org/pdf/2110.07602.pdf), [and Lin et al. 2023](https://arxiv.org/abs/2312.01552).
+4. “With Little Power Comes Great Responsibility” ([Card et al., 2023](https://arxiv.org/abs/2010.06595)) investigates the statistical significance of typical ML experiments. This is a good example of how more rigorous hypothesis testing could be applied to evaluations.
+5. “Are emergent capabilities a mirage?” ([Schaeffer et al., 2023](https://arxiv.org/abs/2304.15004)) argue that previously reported emergent capabilities of LMs ([Wei et al., 2022](https://arxiv.org/abs/2206.07682), [Srivastava et al. 2022](https://arxiv.org/abs/2206.04615)) primarily depend on the metric used, e.g. accuracy vs. log-likelihood. While these flaws had already been recognized by [Wei et al., 2022](https://arxiv.org/abs/2206.07682) and [Srivastava et al. 2022](https://arxiv.org/abs/2206.04615), it is very valuable to rigorously understand how the choice of metric can influence the perceived capabilities.
+6. “True few-shot learning with Language Models” ([Perez et al., 2021](https://proceedings.neurips.cc/paper/2021/file/5c04925674920eb58467fb52ce4ef728-Paper.pdf)) argues that common few-shot techniques at the time would bias the results and thus overestimate the true abilities of LMs. Concretely, many evaluations would select few-shot examples based on a held-out validation set, instead of randomly sampling them. This emphasizes the importance of adequately designing the evals, e.g. not accidentally leaking information from the test set.
+7. “Elo Uncovered: Robustness and Best Practices in Language Model Evaluation” ([Boubdir et al., 2023](https://arxiv.org/pdf/2311.17295.pdf)) investigates whether the commonly used ELO ranking to compare LMs ([Zheng et al. 2023](https://arxiv.org/abs/2306.05685)) fulfills two core desiderata, *reliability* and *transitivity*, in practice. Thus it is a good example of empirically validating evals methodology.
+8. Model evaluation survey papers like [Chang et al., 2023](https://arxiv.org/abs/2307.03109) summarize the state of the field, discuss trends and examples, and explicitly call for model evaluations as an explicit discipline. [Zhang et al. 2023](https://arxiv.org/abs/2312.07398) and [Ivanova 2023](https://arxiv.org/abs/2312.01276)'s "Running cognitive evaluations on large language models: The do's and the don'ts" are initial work in meta-evaluating model evaluations as a field and proposing concrete recommendations.
