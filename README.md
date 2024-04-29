@@ -4,7 +4,7 @@ Model evaluation is a technical field of AI safety and ML research focused on be
 
 This is a short overview of introductory material available in the field of model evaluations and will work as a guide for you to engage with the field.
 
-*This is a work in progress and we invite interested parties to submit pull requests for new materials*
+_This is a work in progress and we invite interested parties to submit pull requests for new materials_
 
 ## Demonstrations research
 
@@ -34,11 +34,16 @@ Here is some interesting material to get inspiration for the hackathon:
 
 See [this Colab notebook](https://colab.research.google.com/drive/14R13JqKsBgRqfIDgvp0ep9T6YG2BFY_V) to use the EasyTransformer model downloader utility to easily load language models in Colab. It also has all the available models there from EleutherAI, OpenAI, Facebook AI Research, Neel Nanda and more.
 
-You can also use the huggingface Transformers library directly [like this](https://huggingface.co/docs/transformers/quicktour#:~:text=%3E%3E%3E%20model%20%3D%20AutoModelForSequenceClassification.-,from_pretrained,-(model_name)%0A%3E%3E%3E).
+[![YouTube video for the above notebook](assets/colab_demo_tb.png)](https://youtu.be/9RREWy7r1Ug)
+_This video was made for the [AI testing hackathon](https://itch.io/jam/aitest) in 2023_
+
+You can also use the huggingface Transformers library directly [like this](<https://huggingface.co/docs/transformers/quicktour#:~:text=%3E%3E%3E%20model%20%3D%20AutoModelForSequenceClassification.-,from_pretrained,-(model_name)%0A%3E%3E%3E>).
 
 **Extrapolating a trend into the future**
 
 Simple [notebook](https://colab.research.google.com/drive/1durgWnT_Xz5d0Z2afolSwIOd-aDsbFgx?usp=sharing) that uses a polynomial regression to make a plot of an extrapolation of some data into the future.
+
+![Demonstration of an extrapolation done with the above notebook](assets/extrapolation_demo.png)
 
 **Notebooks by Hugging Face**
 
@@ -89,5 +94,5 @@ Apollo Research argues that if AI model evaluations want to have meaningful real
 4. “With Little Power Comes Great Responsibility” ([Card et al., 2023](https://arxiv.org/abs/2010.06595)) investigates the statistical significance of typical ML experiments. This is a good example of how more rigorous hypothesis testing could be applied to evaluations.
 5. “Are emergent capabilities a mirage?” ([Schaeffer et al., 2023](https://arxiv.org/abs/2304.15004)) argue that previously reported emergent capabilities of LMs ([Wei et al., 2022](https://arxiv.org/abs/2206.07682), [Srivastava et al. 2022](https://arxiv.org/abs/2206.04615)) primarily depend on the metric used, e.g. accuracy vs. log-likelihood. While these flaws had already been recognized by [Wei et al., 2022](https://arxiv.org/abs/2206.07682) and [Srivastava et al. 2022](https://arxiv.org/abs/2206.04615), it is very valuable to rigorously understand how the choice of metric can influence the perceived capabilities.
 6. “True few-shot learning with Language Models” ([Perez et al., 2021](https://proceedings.neurips.cc/paper/2021/file/5c04925674920eb58467fb52ce4ef728-Paper.pdf)) argues that common few-shot techniques at the time would bias the results and thus overestimate the true abilities of LMs. Concretely, many evaluations would select few-shot examples based on a held-out validation set, instead of randomly sampling them. This emphasizes the importance of adequately designing the evals, e.g. not accidentally leaking information from the test set.
-7. “Elo Uncovered: Robustness and Best Practices in Language Model Evaluation” ([Boubdir et al., 2023](https://arxiv.org/pdf/2311.17295.pdf)) investigates whether the commonly used ELO ranking to compare LMs ([Zheng et al. 2023](https://arxiv.org/abs/2306.05685)) fulfills two core desiderata, *reliability* and *transitivity*, in practice. Thus it is a good example of empirically validating evals methodology.
+7. “Elo Uncovered: Robustness and Best Practices in Language Model Evaluation” ([Boubdir et al., 2023](https://arxiv.org/pdf/2311.17295.pdf)) investigates whether the commonly used ELO ranking to compare LMs ([Zheng et al. 2023](https://arxiv.org/abs/2306.05685)) fulfills two core desiderata, _reliability_ and _transitivity_, in practice. Thus it is a good example of empirically validating evals methodology.
 8. Model evaluation survey papers like [Chang et al., 2023](https://arxiv.org/abs/2307.03109) summarize the state of the field, discuss trends and examples, and explicitly call for model evaluations as an explicit discipline. [Zhang et al. 2023](https://arxiv.org/abs/2312.07398) and [Ivanova 2023](https://arxiv.org/abs/2312.01276)'s "Running cognitive evaluations on large language models: The do's and the don'ts" are initial work in meta-evaluating model evaluations as a field and proposing concrete recommendations.
