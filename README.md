@@ -32,7 +32,7 @@ Here is some interesting material to get inspiration for the hackathon:
 
 **Loading GPT models in Google Colab**
 
-See [this Colab notebook](https://colab.research.google.com/drive/14R13JqKsBgRqfIDgvp0ep9T6YG2BFY_V) to use the EasyTransformer model downloader utility to easily load language models in Colab. It also has all the available models there from EleutherAI, OpenAI, Facebook AI Research, Neel Nanda and more.
+See [this Colab notebook](https://colab.research.google.com/drive/14R13JqKsBgRqfIDgvp0ep9T6YG2BFY_V) to use the Transformerlens model downloader utility to easily load language models in Colab. It also has all the available models there from EleutherAI, OpenAI, Facebook AI Research, Neel Nanda and more.
 
 [![YouTube video for the above notebook](assets/colab_demo_tb.png)](https://youtu.be/9RREWy7r1Ug)
 _This video was made for the [AI testing hackathon](https://itch.io/jam/aitest) in 2023_
