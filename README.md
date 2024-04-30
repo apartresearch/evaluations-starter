@@ -56,6 +56,9 @@ These notebooks all pertain to the usage of transformers and shows how to use th
 
 This notebook provides an overview of how you can finetune LLMs, such as Replicate usage and more. [Go to the notebook here](https://colab.research.google.com/drive/1CUfHP3j1B_gP-45qvRG6VmF7koer59X-?usp=sharing#scrollTo=DGoPq4ziiU86).
 
+**Cloning your voice**
+This [notebook](https://colab.research.google.com/drive/1xl4Fakx9rslRXt0XHUcpN-aslSoEkDzN?usp=sharing) allows you to clone your own voice. 
+
 **Language Model Evaluation Harness**
 
 The LMEH is a set of [over 200 tasks](https://github.com/EleutherAI/lm-evaluation-harness/blob/master/docs/task_table.md) that you can automatically run your models through. You can easily use it by writing *pip install lm-eval* at the top of your script.
