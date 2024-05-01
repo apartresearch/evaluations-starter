@@ -27,6 +27,9 @@ Here is some interesting material to get inspiration for the hackathon:
 - [Guardian article about the influence of AI on the US elections](https://www.theguardian.com/us-news/2024/feb/26/ai-deepfakes-disinformation-election)
 - [80000 hours podcast with Nina Schick on disinformation and the rise of synthetic media](https://80000hours.org/podcast/episodes/nina-schick-disinformation-synthetic-media/)
 - [Rest of World tracks key global incidents of AI-generated election content](https://restofworld.org/2024/elections-ai-tracker/)
+- [Weapons of Mass Destruction Proxy (WMDP) Benchmark](https://www.wmdp.ai/) identifies the catastrophic capacity of LLMs and introduces the solution of unlearning these capabilities.
+- [Spending $200 to make LLMs unsafe](https://simonlermen.com/assets/lora.pdf)
+- [An experimental demonstration of strategic deception in LLMs](https://static1.squarespace.com/static/6593e7097565990e65c886fd/t/65a6f27438891c1e229bbbef/1705439862171/deception_under_pressure.pdf)
 
 ### Some starter code and Colabs for the hackathon
 
