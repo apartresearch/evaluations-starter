@@ -37,9 +37,6 @@ Here is some interesting material to get inspiration for the hackathon:
 
 See [this Colab notebook](https://colab.research.google.com/drive/14R13JqKsBgRqfIDgvp0ep9T6YG2BFY_V) to use the Transformerlens model downloader utility to easily load language models in Colab. It also has all the available models there from EleutherAI, OpenAI, Facebook AI Research, Neel Nanda and more. Alternatively, you can use [this notebook](https://colab.research.google.com/drive/171cZA-FJHYbeaD0ZG3IDeZ3OISTT-dUk?usp=sharing) to use the Replicate API to run the latest open-source language models, such as LLama-3.
 
-[![YouTube video for the above notebook](assets/colab_demo_tb.png)](https://youtu.be/9RREWy7r1Ug)
-_This video was made for the [AI testing hackathon](https://itch.io/jam/aitest) in 2023_
-
 You can also use the huggingface Transformers library directly [like this](<https://huggingface.co/docs/transformers/quicktour#:~:text=%3E%3E%3E%20model%20%3D%20AutoModelForSequenceClassification.-,from_pretrained,-(model_name)%0A%3E%3E%3E>).
 
 **Extrapolating a trend into the future**
