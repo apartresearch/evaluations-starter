@@ -100,3 +100,10 @@ Apollo Research argues that if AI model evaluations want to have meaningful real
 6. “True few-shot learning with Language Models” ([Perez et al., 2021](https://proceedings.neurips.cc/paper/2021/file/5c04925674920eb58467fb52ce4ef728-Paper.pdf)) argues that common few-shot techniques at the time would bias the results and thus overestimate the true abilities of LMs. Concretely, many evaluations would select few-shot examples based on a held-out validation set, instead of randomly sampling them. This emphasizes the importance of adequately designing the evals, e.g. not accidentally leaking information from the test set.
 7. “Elo Uncovered: Robustness and Best Practices in Language Model Evaluation” ([Boubdir et al., 2023](https://arxiv.org/pdf/2311.17295.pdf)) investigates whether the commonly used ELO ranking to compare LMs ([Zheng et al. 2023](https://arxiv.org/abs/2306.05685)) fulfills two core desiderata, _reliability_ and _transitivity_, in practice. Thus it is a good example of empirically validating evals methodology.
 8. Model evaluation survey papers like [Chang et al., 2023](https://arxiv.org/abs/2307.03109) summarize the state of the field, discuss trends and examples, and explicitly call for model evaluations as an explicit discipline. [Zhang et al. 2023](https://arxiv.org/abs/2312.07398) and [Ivanova 2023](https://arxiv.org/abs/2312.01276)'s "Running cognitive evaluations on large language models: The do's and the don'ts" are initial work in meta-evaluating model evaluations as a field and proposing concrete recommendations.
+
+## Evaluation Frameworks
+
+- **[Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)** aims to provide a unified framwork to test generative language models on evaluation tasks. It features 200+ tasks and support for both open source and commercial model APIs.
+
+
+- **[Holistic Evaluation of Language Models](https://github.com/stanford-crfm/helm)** is a framework to evaluate generative language models on a collection of scenarios. Models can be accessed via a unified interface.
